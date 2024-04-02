@@ -86,6 +86,7 @@ a {
 .recherche-hebergements-searchbar {
     display: flex;
     align-items: center;
+    margin-top: 35px;
 }
 
 .recherche-hebergements-searchbar__icon {
@@ -128,17 +129,56 @@ a {
 
 .recherche-hebergements-filterbar {
     display: flex;
+    align-items: center;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recherche-hebergements-filterbar__text {
+    margin: 0;
+}
+
+.recherche-hebergements-filterbar__button {
+    display: flex;
+    align-items: center;
+    padding: 12px 19px;
+    margin-left: 15px;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+}
+
+.filter-icon {
+    height: 22px;
+}
+
+.recherche-hebergements-filterbar__button-text {
+    font-size: 17px;
+    margin: 0 0 0 10px;
+}
+
+.button-highlight:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .recherche-hebergements-infobar {
     display: flex;
     align-items: center;
+    margin-top: 35px;
+}
+
+.infobar-icon {
+    padding: 3px 8px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 12px;
+    margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 
 .hebergements-and-populaires section {
