@@ -26,6 +26,10 @@ body {
     box-sizing: border-box;
 }
 
+h1, p {
+    margin: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -73,32 +77,45 @@ a {
 
 .app-bar__nav {
     display: flex;
-    gap: 68px;
+    gap: 68px;    
+}
+
+.app-bar__nav a {
     padding-top: 16px;
 }
 
 .app-bar__nav--highlight:hover {
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
+    padding-top: 14px;
 }
 
-/****** Recherche Hébergements ***********/
-.recherche-hebergements-searchbar {
+/****** Hebergement Search ***********/
+.hebergement-search{
+    margin-top: 30px;
+}
+
+.hebergement-search-headline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hebergement-search-searchbar {
     display: flex;
     align-items: center;
     margin-top: 35px;
 }
 
-.recherche-hebergements-searchbar__icon {
+.hebergement-search-searchbar__icon {
     color: black;
-    height: 18px;
-    width: 14px;
+    font-size: 18px;
     padding: 16px 18px;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
 }
 
-.recherche-hebergements-searchbar__field {
+.hebergement-search-searchbar__field {
     height: 48px;
     width: 195px;
     padding: 0 ;
@@ -110,7 +127,7 @@ a {
     text-align: center;
 }
 
-.recherche-hebergements-searchbar__button {
+.hebergement-search-searchbar__button {
     height: 50px;
     width: 132px;
     border: 0;
@@ -127,51 +144,52 @@ a {
     display: none;
 }
 
-.recherche-hebergements-filterbar {
+.hebergement-search-filterbar {
     display: flex;
     align-items: center;
+    gap: 15px;
     margin-top: 35px;
     font-size: 18px;
     font-weight: bold;
 }
 
-.recherche-hebergements-filterbar__text {
+.hebergement-search-filterbar__text {
     margin: 0;
 }
 
-.recherche-hebergements-filterbar__button {
+.hebergement-search-filterbar__button {
     display: flex;
     align-items: center;
+    gap: 10px;
     padding: 12px 19px;
-    margin-left: 15px;
     border: 2px solid var(--main-bg-color);
     border-radius: 25px;
 }
 
 .filter-icon {
-    height: 22px;
+    font-size: 22px;
 }
 
-.recherche-hebergements-filterbar__button-text {
+.hebergement-search-filterbar__button-text {
     font-size: 17px;
-    margin: 0 0 0 10px;
 }
 
 .button-highlight:hover {
     background-color: var(--filter-bg-color);
 }
 
-.recherche-hebergements-infobar {
+.hebergement-search-infobar {
     display: flex;
     align-items: center;
+    gap: 10px;
     margin-top: 35px;
 }
 
 .infobar-icon {
-    padding: 3px 8px;
+    font-size: 10px;
+    padding: 6px 9px;
     border: 1px solid var(--main-bg-color);
     border-radius: 12px;
-    margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
