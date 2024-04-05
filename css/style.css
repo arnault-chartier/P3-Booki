@@ -209,14 +209,25 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergements-cards a {
+    width: 31%;
 }
 
 .hebergements-cards .card {
-    width: 33%;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    margin-top: 33px;
+    margin-top: 30px;
     padding-bottom: 15px;
 }
 
@@ -292,6 +303,11 @@ a {
     margin-bottom: 5px;
 }
 
+.hebergements__more-link {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
 
 
 
