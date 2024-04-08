@@ -351,6 +351,26 @@ a {
     font-size: 16px;
 }
 
+/********* Footer ********/
+
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+    margin-top: 35px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 20px;
+    gap: 15px;
+}
+
+.footer-section__title {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
