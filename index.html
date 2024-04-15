@@ -31,27 +31,32 @@
                 </section>
                 <form action="" class="hebergement-search-searchbar">
                     <i class="fa-solid fa-location-dot hebergement-search-searchbar__icon" aria-hidden="true"></i>
-                    <input type="text" placeholder="Marseille, France" class="hebergement-search-searchbar__field">
-                    <button class="hebergement-search-searchbar__button"><i class="fa-solid fa-magnifying-glass hidden-icon" aria-hidden="true"></i>Rechercher</button>
+                    <input type="text" placeholder="Marseille, France" class="hebergement-search-searchbar__field"  id="hebergement-search" name="hebergement-search">
+                    <button class="hebergement-search-searchbar__button">Rechercher</button>
+                    <button class="hebergement-search-searchbar__button-mobile"><i class="fa-solid fa-magnifying-glass hebergement-search-searchbar__button-mobile-icon" aria-hidden="true"></i></button>
                 </form>
                 <section class="hebergement-search-filterbar">
-                    <p class="hebergement-search-filterbar__text">Filtres</p>
-                    <div class="hebergement-search-filterbar__button button-highlight">
-                        <i class="fa-solid fa-money-bill-wave filter-icon" aria-hidden="true"></i>
-                        <p class="hebergement-search-filterbar__button-text">Économique</p>
+                    <div>
+                        <p class="hebergement-search-filterbar__text">Filtres</p>
                     </div>
-                    <div class="hebergement-search-filterbar__button button-highlight">
-                        <i class="fa-solid fa-person filter-icon" aria-hidden="true"></i>
-                        <p class="hebergement-search-filterbar__button-text">Familial</p>
-                    </div>
-                    <div class="hebergement-search-filterbar__button button-highlight">
-                        <i class="fa-solid fa-heart filter-icon" aria-hidden="true"></i>
-                        <p class="hebergement-search-filterbar__button-text">Romantique</p>
-                    </div>
-                    <div class="hebergement-search-filterbar__button button-highlight">
-                        <i class="fa-solid fa-fire filter-icon" aria-hidden="true"></i>
-                        <p class="hebergement-search-filterbar__button-text">Nos pépites</p>
-                    </div>
+                    <div class="hebergement-search-filterbar-buttons">
+                        <div class="hebergement-search-filterbar__button button-highlight">
+                            <i class="fa-solid fa-money-bill-wave filter-icon" aria-hidden="true"></i>
+                            <p class="hebergement-search-filterbar__button-text">Économique</p>
+                        </div>
+                        <div class="hebergement-search-filterbar__button button-highlight">
+                            <i class="fa-solid fa-person filter-icon" aria-hidden="true"></i>
+                            <p class="hebergement-search-filterbar__button-text">Familial</p>
+                        </div>
+                        <div class="hebergement-search-filterbar__button button-highlight">
+                            <i class="fa-solid fa-heart filter-icon" aria-hidden="true"></i>
+                            <p class="hebergement-search-filterbar__button-text">Romantique</p>
+                        </div>
+                        <div class="hebergement-search-filterbar__button button-highlight">
+                            <i class="fa-solid fa-fire filter-icon" aria-hidden="true"></i>
+                            <p class="hebergement-search-filterbar__button-text">Nos pépites</p>
+                        </div>
+                    </div>                 
                 </section>
                 <section class="hebergement-search-infobar">
                     <i class="fa-solid fa-info infobar-icon" aria-hidden="true"></i>
@@ -244,26 +249,34 @@
                 <div class="activites-cards">
                     <a href="#">
                         <article class="activites-card">
-                            <img src="/images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port">
-                            <h3 class="activites-card__title">Vieux-Port</h3>
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port">
+                            <div class="activites-card-content">
+                                <h3 class="activites-card__title">Vieux-Port</h3>
+                            </div>
                         </article>    
                     </a>
                     <a href="#">
                         <article class="activites-card">
-                            <img src="/images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues">
-                            <h3 class="activites-card__title">Fort de Pomègues</h3>
+                            <img src="./images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues">
+                            <div class="activites-card-content">
+                                <h3 class="activites-card__title">Fort de Pomègues</h3>
+                            </div>
                         </article>    
                     </a>
                     <a href="#">
                         <article class="activites-card">
-                            <img src="/images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc national des Calanques">
-                            <h3 class="activites-card__title">Parc national des Calanques</h3>
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc national des Calanques">
+                            <div class="activites-card-content">
+                                <h3 class="activites-card__title">Parc national des Calanques</h3>
+                            </div>
                         </article>    
                     </a>
                     <a href="#">
                         <article class="activites-card">
-                            <img src="/images/activites/florian-wehde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
-                            <h3 class="activites-card__title">Notre-Dame-de-la-Garde</h3>
+                            <img src="./images/activites/florian-wehde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
+                            <div class="activites-card-content">
+                                <h3 class="activites-card__title">Notre-Dame-de-la-Garde</h3>
+                            </div>
                         </article>    
                     </a>
                 </div>
