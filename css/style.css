@@ -118,7 +118,6 @@ a {
 
 .hebergement-search-searchbar__field {
     height: 48px;
-    width: 195px;
     padding: 0;
     border: none;
     border-top: 1px solid var(--main-bg-color);
@@ -130,14 +129,12 @@ a {
 
 .hebergement-search-searchbar__button {
     height: 50px;
-    width: 132px;
     border: 0;
-    padding: 0;
+    padding: 0 16px;
     background-color: var(--main-color);
     border-radius: 0 15px 15px 0;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
     color: white;
 }
 
@@ -152,6 +149,7 @@ a {
 
 .hebergement-search-searchbar__button-mobile-icon {
     padding: 16px;
+    margin-left: -10px;
     background-color: var(--main-color);
     border-radius: 15px;
     font-size: 17px;
@@ -170,10 +168,12 @@ a {
 
 .hebergement-search-filterbar__text {
     margin: 0;
+    font-size: 18px;
 }
 
 .hebergement-search-filterbar-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -473,14 +473,15 @@ footer section {
 
     .header__nav {
         gap: 0;
+        width: 100%;
+        border-bottom: 2px var(--main-bg-color) solid;
     }
 
     .header__nav a {
         padding: 0;
         padding-bottom: 15px;
-        width: 187px;
+        width: 50%;
         text-align: center;
-        border-bottom: 2px var(--main-bg-color) solid;
     }
 
     .header__nav--highlight:hover {
@@ -494,13 +495,8 @@ footer section {
         padding: 0 20px;
     }
 
-    .hebergement-search h1 {
-        font-size: 22px;
-    }
-
     .hebergement-search-searchbar {
         width: 100%;
-        justify-content: space-between;
      }
 
     .hebergement-search-searchbar__field {
@@ -516,13 +512,9 @@ footer section {
     }
 
     .hebergement-search-filterbar-buttons {
-        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
         row-gap: 20px;
-        column-gap: 10px;
-    }
-
-    .hebergement-search-filterbar__button {
-        width: 36%;
     }
 
     .hebergement-search-filterbar__button-text {
@@ -619,12 +611,5 @@ footer section {
     footer section {
         width: 100%;
         padding: 0;
-    }
-}
-
-/* No display under 320px */
-@media (max-width: 320px) {
-    .main-container {
-        display: none;
     }
 }
